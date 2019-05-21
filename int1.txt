@@ -1,0 +1,29 @@
+
+int strzal;
+int liczba;
+int proba;
+
+liczba =20;
+proba=0;
+
+printfstr("Pomyslalem liczbe od 1 do 100\n");
+
+whiledo(strzal!=liczba){
+    proba=proba+1;
+    printfstr("Zgadnij jaka (to twoja ");
+    printfi(proba);
+    printfstr(" proba): ");
+    
+    readint(strzal);
+    iffy(strzal == liczba){
+        printfstr("Udalo sie, zgadles w ");
+        printfi(proba);
+        printfstr(" probie!");
+    };
+    iffy(strzal<liczba){
+        printfstr("To za malo!\n");
+    };
+    iffy(strzal> liczba){
+        printfstr("To za duzo!\n");
+    };
+};

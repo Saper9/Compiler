@@ -1,0 +1,48 @@
+int x;
+x=6;
+
+int y;
+y=2;
+
+int z;
+
+z=x+y;
+
+printfstr(" pierwsze dzialanie ");
+printfi(z);
+
+z=x-y;
+
+printfstr(" drugie dzialanie ");
+printfi(z);
+
+z=x*y;
+
+printfstr(" trzecie dzialanie ");
+printfi(z);
+
+z=x/y;
+
+printfstr(" czwarte dzialanie ");
+printfi(z);
+
+printfstr("Float \n");
+float a;
+float b;
+float c;
+
+a=3.14;
+b=2.2;
+
+
+c=a+b;
+printfstr(" pierwsze dzialanie ");
+printfl(c);
+c=a-b;
+printfstr(" drugie dzialanie ");
+printfl(c);
+c=a*b;
+printfstr(" trzecie dzialanie ");
+printfl(c);
+c=a/b;printfstr(" czwarte dzialanie ");
+printfl(c);

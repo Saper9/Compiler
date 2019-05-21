@@ -1,0 +1,5 @@
+float x;
+
+x=2.1+2;
+
+printfl(x);

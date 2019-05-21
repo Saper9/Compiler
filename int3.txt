@@ -1,0 +1,33 @@
+int a[5];
+
+a[0]=5;
+a[1]=4;
+a[2]=1;
+a[3]=12;
+a[4]=3;
+
+int iterator1;
+int iterator2;
+iterator1=0;
+int temp;
+whiledo(iterator1<4){
+    iterator2=0;
+    whiledo(iterator2<4){
+        iffy(a[iterator2]>a[iterator2+1]){
+            temp=a[iterator2];
+            a[iterator2]=a[iterator2+1];
+            a[iterator2+1]=temp;
+
+        };
+        iterator2=iterator2+1;
+    };
+    iterator1=iterator1+1;
+};
+
+int i;
+i=0;
+whiledo(i<5){
+    printfi(a[i]);
+    printfstr(" ");
+i=i+1;
+};

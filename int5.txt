@@ -1,0 +1,17 @@
+int a;
+int b;
+
+a=2;
+b=3;
+
+iffy(a==2)
+{
+    printfstr("Pierwsza petla");
+    iffy(b==3){
+        printfstr("druga petla");
+        iffy(b==5){
+            printfstr("trzecia petla");
+        };
+    };
+
+};

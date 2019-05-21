@@ -1,0 +1,44 @@
+.data
+	 res1	:	.word	0
+	 res2	:	.word	0
+	_string0	:	.asciiz	"Podaj liczbe calkowita: "
+	_string1	:	.asciiz	"silnia = "
+	i	:	.word	0
+	n	:	.word	0
+	s	:	.word	0
+.text
+li $v0, 4
+la $a0, _string0
+syscall
+li $v0, 5
+syscall
+sw $v0, n
+li $t0,1
+sw $t0,s
+li $t0,1
+sw $t0,i
+b ETYKIETA0
+ETYKIETA0:
+lw $t0,i
+lw $t1,n
+bgt $t0,$t1, ETYKIETA1
+lw $t0,s
+lw $t1,i
+mul $t0 , $t0 , $t1
+sw $t0, res1
+lw $t0, res1
+sw $t0,s
+lw $t0,i
+li $t1,1
+add $t0 , $t0 , $t1
+sw $t0, res2
+lw $t0, res2
+sw $t0,i
+b ETYKIETA0
+ETYKIETA1:
+li $v0, 4
+la $a0, _string1
+syscall
+li $v0, 1
+lw $a0, s
+syscall
